@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Chocolaterie</title>
+    <link rel="icon" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/css/catalog.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <ul class="off-screen-menu">
+        <li> <a href="../index.html"> Home </a> </li>
+        <li> <a href="../pages/catalog.html"> I Nostri prodotti </a> </li>
+        <li> <a href="../pages/cart.html"> Carrello </a> </li>
+        <li> <a href="../pages/aboutUs.html"> About Us </a> </li>
+    </ul>
+
+    <header>
+        <nav>
+            <a href="../index.html"> <div class="logo"></div> </a>
+            <a class="hamburger-menu"> <img src="../assets/images/icons/hamburger-menu.svg" alt="hamburger-menu"> </a>
+        </nav>
+    </header>
+    
+    <main>
+        <a href="pages/aboutUs.html" class="title"> <h1>I nostri prodotti</h1> </a>
+        
+        <form action="/search" method="get"> <!-- Search function-->
+            <input id="searchBar" name="q" placeholder="Cerca prodotti..." />
+            <img src="../assets/images/icons/search.svg" alt="">
+        </form>
+
+        <section id="products">
+
+            <div class="product">
+                <h2> Cioccolatini alla menta </h2>
+                <div class="product-content">
+                    <div class="left-part">
+                        <span class="img mint-chocolate"></span> <!-- inserire: background: url('...path...') center no-repeat; -->
+                    </div>
+                    <div class="right-part">
+                        <p>
+                            Tipo: Cioccolatini alla Menta 
+                            Ingredienti principali: Cioccolato biologico al 70% di cacao, estratto naturale di menta, crema di menta 
+                            Certificazioni: Biologico
+                            Ingredienti: Cacao ed estratto di menta 
+                            Senza: Glutine, coloranti
+                            Formato: Confezione da 12 cioccolatini 
+                            Sapore: Fresco, vivace, con un'intensa nota di menta che si fonde armoniosamente con il gusto ricco e avvolgente del cioccolato, lasciando una sensazione rinfrescante e soddisfacente.
+                        </p>
+                        <div class="bottom">
+                            <a class="button" href="product.html"> <button type="button">Acquista</button> </a>
+                            <a href=""> <img src="../assets/images/icons/cart.svg" alt="cart-icon" /> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product" id="fix">
+                <h2> Cioccolato bianco al miele </h2>
+                <div class="product-content">
+                    <div class="left-part">
+                        <span class="img honey-chocolate"></span> <!-- inserire: background: url('...path...') center no-repeat; -->
+                    </div>
+                    <div class="right-part">
+                        <p>
+                            Tipo: Tavoletta di cioccolato
+                            Ingredienti principali: Cioccolato al latte, noci tostate, miele locale
+                            Certificazioni: 
+                            Origine degli ingredienti: Cacao di alta qualità, noci locali, miele proveniente da apicoltura locale
+                            Senza: Lattosio (tracce possono essere presenti), glutine
+                            Formato: Tavoletta da 100g
+                            Sapore: Dolce, cremoso, con note di noci tostate e miele aromatico.
+                        </p>
+                        <div class="bottom">
+                            <a class="button" href="product.html"> <button type="button">Acquista</button> </a>
+                            <a href=""> <img src="../assets/images/icons/cart.svg" alt="cart-icon" /> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <h2> Praline alla nocciola </h2>
+                <div class="product-content">
+                    <div class="left-part">
+                        <span class="img hazelnut-chocolate"></span> <!-- inserire: background: url('...path...') center no-repeat; -->
+                    </div>
+                    <div class="right-part">
+                        <p>
+                            Tipo: Praline alla Nocciola
+                            Ingredienti principali: Nocciola tostata, cioccolato biologico al latte, crema di nocciola
+                            Certificazioni: Biologico
+                            Origine degli ingredienti: Nocciole provenienti da coltivazioni eco-sostenibili, cioccolato al latte da fonti biologiche
+                            Senza: Glutine
+                            Formato: Confezione da 12 praline
+                            Sapore: Avvolgente, con un equilibrio perfetto tra la dolcezza delle nocciole tostate e il cremoso cioccolato al latte
+                        </p>
+                        <div class="bottom">
+                            <a class="button" href="product.html"> <button type="button">Acquista</button> </a>
+                            <a href=""> <img src="../assets/images/icons/cart.svg" alt="cart-icon" /> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="paginator">
+            <div class="paginator-container">
+                <span class="chevron-left"> <img src="../assets/images/icons/chevron.svg" alt="chevron-left"> </span>
+                <div class="pages">
+                    <span> 1 </span>
+                    <span> 2 </span>
+                    <span> 3 </span>
+                    <span> 4 </span>
+                    <span> 5 </span>
+                </div>
+                <span class="chevron-right"> <img src="../assets/images/icons/chevron.svg" alt="chevron-right"> </span> <!--TODO: change arrow direction-->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5>La Chocolaterie</h5>
+        <ul class="social-icons">
+            <li><div class="wts-icon"> <img src="../assets/images/icons/Whatsapp icon.svg" alt="whatsapp"></div></li>
+            <li><div class="ig-icon"> <img src="../assets/images/icons/Instagram Icon.svg" alt="instagram"></div></li>
+        </ul>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+
+</body>
+</html>

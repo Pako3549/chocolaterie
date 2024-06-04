@@ -1,0 +1,16 @@
+@media screen and (max-width: 500px){
+    .product-content{flex-direction: column !important;}
+
+    .left-part{width: 90%; height: 200px;}
+    .right-part{width: 90%; height: 50%; margin: 0;}
+
+    .paginator span, .paginator img{width: 30px; height: 30px;}
+
+    /*************/
+
+    #who-we-are .container, #aboutUsAndYou .container{flex-direction: column;}
+    #who-we-are .text, #aboutUsAndYou .images{width: 90%;}
+    #who-we-are span{width: 90%;}
+
+    #aboutUsAndYou .container p{width: 100%;}
+}

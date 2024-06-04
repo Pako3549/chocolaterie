@@ -1,0 +1,48 @@
+@import url('../css/style.css');
+body{overflow-x: hidden;}
+
+
+.title{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vw;
+}
+
+
+
+/*************************/
+
+.product:nth-child(even){flex-direction: row;}
+
+.product span{
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.product:nth-child(1) span{background: url("../images/cioccolatini-miele.avif") center/cover no-repeat;}
+.product:nth-child(2) span{background: url("../images/cioccolatini-alla-menta.webp") center/cover no-repeat;}
+.product:nth-child(3) span{background: url("../images/cioccolatini-cocco.jpg") center/cover no-repeat;}
+
+.price-and-quantity{display: flex;}
+
+.quantity{display: flex;}
+.quantity *{margin: 10px;}
+.quantity img{width: 30px; cursor: pointer;}
+
+h2, h4{display: grid; place-items: center;}
+
+
+
+/*************************/
+
+#checkout-cta{width: 100%; display: flex; justify-content: flex-end; margin: 50px 0;}
+#checkout-cta button{
+    padding: 15px 20px;
+    border: none;
+    background: var(--dark-brown);
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}

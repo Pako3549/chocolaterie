@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Chocolaterie</title>
+    <link rel="icon" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <ul class="off-screen-menu">
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="../chocolaterie/pages/catalog.html"> I Nostri prodotti </a> </li>
+        <li> <a href="../chocolaterie/pages/cart.html"> Carrello </a> </li>
+        <li> <a href="../chocolaterie/pages/aboutUs.html"> About Us </a> </li>
+    </ul>
+
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <div class="hamburger-menu"> <img src="assets/images/icons/hamburger-menu.svg" alt="hamburger-menu"> </div>
+        </nav>
+    </header>
+    
+    <main>
+        <a href="pages/aboutUs.html" class="title"> <h1> La Chocolaterie </h1> </a>
+
+        <section id="carousel" class="carousel"> <!--TODO: functioning carousel-->
+            <div class="upper">
+                <img src="assets/images/icons/chevron.svg" class="chevron left" alt="freccia sinistra"/>
+                <div class="img"></div>
+                <img src="assets/images/icons/chevron.svg" class="chevron right" alt="freccia sinistra"/>
+            </div>
+            <div class="controls">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <div class="products">
+            <div class="product">
+                <div class="image"></div>
+                <div class="text">
+                    <h2>Cioccolatini al caffé</h2>
+                    <p>
+                    Tipo: Cioccolatini
+                    Ingredienti principali: Cioccolato biologico al 70% di cacao, crema al caffè
+                    Certificazioni: Biologico
+                    Origine degli ingredienti: Cacao da fonti biologiche, caffè da coltivazioni eco-sostenibili
+                    Senza: Glutine, coloranti artificiali, aromi artificiali
+                    Formato: Confezione da 12 cioccolatini
+                    Sapore: Intenso, aromatico, con note di caffè tostato
+                    </p>
+                </div>
+            </div>
+
+            <div class="product"> <!-- invertire la visualizzazione dell'articolo da css -->
+                <div class="image"></div>
+                <div class="text">
+                    <h2>Cioccolatini al pistacchio</h2>
+                    <p>
+                        Tipo: Cioccolatini
+                        Ingredienti principali: Cioccolato bianco, pistacchi tostati
+                        Certificazioni: 
+                        Origine degli ingredienti: Cacao di alta qualità, pistacchi provenienti dalle coltivazioni eco-sostenibili della Sicilia
+                        Senza: Glutine, coloranti artificiali, aromi artificiali
+                        Formato: Confezione da 8 cioccolatini
+                        Sapore: Dolce, cremoso, con note di pistacchio croccante e cioccolato bianco delicato
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5>La Chocolaterie</h5>
+        <ul class="social-icons">
+            <li><div class="wts-icon"> <img src="assets/images/icons/Whatsapp icon.svg" alt="whatsapp"></div></li>
+            <li><div class="ig-icon"> <img src="assets/images/icons/Instagram Icon.svg" alt="instagram"></div></li>
+        </ul>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

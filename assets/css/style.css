@@ -1,0 +1,174 @@
+*{margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+  
+:root{
+    --dark-brown: #45322E;
+    --beige: #CCB49A;
+}
+body{
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    width: 100%; height: 70px;
+    display: grid;
+    background-color: var(--dark-brown);
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.off-screen-menu{
+    width: 100%; height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background-color: var(--dark-brown);
+    color: white;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    left: -450px;
+    transition: 1s;
+    padding: 15vh 0;
+    list-style: none;
+    z-index: 100;
+}
+
+.off-screen-menu li{margin-left: 50px;}
+.off-screen-menu a{color: white;}
+
+.logo{
+    width: 50px; height: 50px;
+    background: url('../images/logo.svg');
+    background-size: contain;
+}
+
+.hamburger-menu img{width: 50px; height: 50px; cursor: pointer;}
+
+
+/*** MAIN SECTION ***/
+
+main{padding: 10px 3vw;}
+
+
+
+.title{width: 100%; display: grid; margin: 25px;}
+.title h1{text-align: center; color: var(--dark-brown);}
+.carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .img{
+    width: 75vw; height: 50vh;
+    background: url('../images/carousel-2.jpg') center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.chevron{width: 50px;}
+.chevron.left{rotate: -90deg;}
+.chevron.right{rotate: 90deg;}
+
+.controls{display: flex; margin: 10px 0;}
+.controls span{
+    display: block;
+    width: 15px; height: 15px;
+    border: 2px solid #45322E;
+    margin-inline: 5px;
+    border-radius: 10px;
+}
+
+.controls span:nth-child(1){
+    background-color: #45322E;
+}
+
+
+
+
+/*********/
+
+.products{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    align-items: center;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.product{display: flex; width: 65%;}
+.product *{margin: 20px;}
+#fix:nth-child(2){flex-direction: column !important;} 
+
+.product .image{
+    width: 65%;
+    max-width: 230px;
+    border-radius: 10px;
+}
+.product:nth-child(1) .image{
+    background: url('../images/cioccolatini-caffe.jpg') center/cover no-repeat;
+}
+
+.product:nth-child(2) .image{
+    background: url('../images/cioccolatini-pistacchio.webp') center/cover no-repeat;
+}
+
+.product .text{
+    width: 80%;
+}
+
+.product .text h2{
+    color: var(--dark-brown);
+}
+
+.product:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+
+
+
+/*********/
+
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #45322E;
+}
+
+footer h5{
+    color: #CCB49A;
+    font-size: 40px;
+    font-family: "Island Moments", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+}
+
+footer ul li{margin-inline: 15px;}
+
+.social-icons img{width: 30px; height: 30px;}
